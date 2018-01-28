@@ -1,17 +1,24 @@
 const PATHS = {
     nodeModules: 'node_modules/',
+
     dist: 'dist/',
     distScripts: 'dist/scripts/',
     distStyles: 'dist/styles',
+    distReact: 'dist/react',
+
     build: 'build/',
     buildScripts: 'build/scripts/',
-    buildStyles: 'build/styles/'
+    buildStyles: 'build/styles/',
+    buildReact: 'build/react/'
 };
 
 let gulp = require('gulp'),
-    cleanCss = require('gulp-clean-css'),
     concat = require('gulp-concat'),
     rename = require('gulp-rename'),
+
+    cleanCss = require('gulp-clean-css'),
+    sass = require('gulp-sass'),
+
     debug = require('gulp-debug'),
     del = require('del');
 
@@ -79,6 +86,22 @@ gulp.task('vendor-clear-scripts', () => {
     ]);
 });
 /*** end:   Vendor ***/
+
+/*** start: Styles ***/
+gulp('sass', () => {
+    gulp.src(PATHS.buildStyles + '**/*.(scss/sass)')
+        .pipe(debug({title: 'sass'}))
+        .pipe(sass())
+        .pipe(gulp.dest(PATHS.distStyles));
+        
+    gulp.src(PATHS.buildStyles + '**/*.(scss/sass)')
+        .pipe(debug({title: 'sass'}))
+        .pipe(sass())
+        .pipe(cleanCss({compatibility: 'ie8'}))
+        .pipe(rename({suffix: '.min'}))
+        .pipe(gulp.dest(PATHS.distStyles));
+});
+/*** end:   Styles ***/
 
 /*** start: React ***/
 /*** end:   React ***/

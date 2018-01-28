@@ -1,0 +1,43 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+$rb4-font-families: (
+    "sans-serif": $font-family-sans-serif,
+    "serif": Georgia, "Times New Roman", Times, "Times New Roman", serif,
+    "monospace": $font-family-monospace,
+);
+
+$rb4-font-weights: (
+    "100": 100,
+    "200": 200,
+    "300": 300,
+    "400": 400,
+    "500": 500,
+    "600": 600,
+    "700", 700,
+    "normal": normal,
+    "bold": bold,
+    "bolder": bolder,
+    "lighter": lighter
+);
+
+$rba-font-styles: (
+    "normal": normal,
+    "italic": italic,
+    "oblique": oblique
+);
+
+$rbs-text-decoration: (
+    "none": none,
+    "underline": underline,
+    "overline": overline,
+    "line-through": line-through
+);
+
+$rbs-text-transform: (
+    "none": none,
+    "caplitalize": capitalize,
+    "uppercase": uppercase,
+    "lowercase": lowercase
+);
