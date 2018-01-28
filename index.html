@@ -20,10 +20,10 @@
 <body>
 <div class="container">
     <h1 class="display-1">React Bootstrap 4</h1>
-    <p class="lead"><a href="rb4-app.html">rb4-app</a></p>
+    <p class="lead"><a href="rb4-app.html" class="badge badge-secondary">rb4-app</a></p>
 
     <section class="card border-primary mb-3">
-        <div class="card-header">
+        <div class="card-header bg-primary text-light">
             <h3 class="card-title"><i class="fab fa-css3 fa-fw"></i> Bootstrap 4</h3>
         </div>
         <div class="card-body">
@@ -55,34 +55,40 @@
                 </p>
             </div>
         </div>
+        <div class="card-footer text-right">
+            <small><a href="https://getbootstrap.com/" target="_blank">Website</a></small>
+        </div>
     </section>
 
     <section class="card border-success mb-3">
-            <div class="card-header">
-                <h3 class="card-title"><i class="fas fa-flag fa-fw"></i> Font Awesome</h3>
+        <div class="card-header bg-success text-light">
+            <h3 class="card-title"><i class="fas fa-flag fa-fw"></i> Font Awesome</h3>
+        </div>
+        <div class="card-body">
+            <div>
+                <h4>Some Icons</h4>
+                <p>
+                    <i class="fas fa-user fa-2x"></i> <i class="fab fa-css3"></i>
+                </p>
             </div>
-            <div class="card-body">
-                <div>
-                    <h4>Some Icons</h4>
-                    <p>
-                        <i class="fas fa-user fa-2x"></i> <i class="fab fa-css3"></i>
-                    </p>
-                </div>
-            </div>
+        </div>
+        <div class="card-footer text-right">
+            <small><a href="https://fontawesome.com/" target="_blank">Website</a></small>
+        </div>
     </section>
 
     <section class="card border-warning mb-3">
-            <div class="card-header">
-                <h3 class="card-title"><i class="fab fa-react fa-fw"></i> React</h3>
+        <div class="card-header bg-warning text-dark">
+            <h3 class="card-title"><i class="fab fa-react fa-fw"></i> React</h3>
+        </div>
+        <div class="card-body">
+            <div id="rb4-test">
+                <p class="text-danger">React is NOT working.</p>
             </div>
-            <div class="card-body">
-                <div id="rb4-test">
-                    <p class="text-danger">React is NOT working.</p>
-                </div>
-            </div>
-            <div class="card-footer">
-                <a href="rb4-app.html">Go</a>
-            </div>
+        </div>
+        <div class="card-footer text-right">
+            <small><a href="https://reactjs.org/" target="_blank">Website</a> | <a href="rb4-app.html">rb4-app</a></small>
+        </div>
     </section>
 
     <footer class="text-right text-muted mb-5 border-top">
