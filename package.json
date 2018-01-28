@@ -1,0 +1,37 @@
+{
+  "name": "react-bootstrap-4",
+  "version": "1.0.0",
+  "description": "Simple Bootstrap 4 components in React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavinaLeong/React-Bootstrap-4.git"
+  },
+  "keywords": [
+    "web",
+    "design",
+    "html",
+    "css",
+    "html5",
+    "development",
+    "bootstrap",
+    "reactjs",
+    "npm",
+    "gulp",
+    "sass"
+  ],
+  "author": "Davina Leong",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DavinaLeong/React-Bootstrap-4/issues"
+  },
+  "homepage": "https://github.com/DavinaLeong/React-Bootstrap-4#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9"
+  }
+}
