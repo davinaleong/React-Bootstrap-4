@@ -11,19 +11,20 @@
     <link rel="copyright" href="copyright.html">
     <link rel="icon" href="images/favicon.png" type="image/png">
 
-    <title>React Bootstrap 4</title>
-
+    <link href="dist/styles/vendor.min.css" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+    <title>React Bootstrap 4</title>
 </head>
 
 <body>
-<h1 class="display-1">React Bootstrap 4</h1>
-<p class="lead">To <a href="rb4-app.html">rb4-app</a>.</p>
-
 <div class="container">
-    <section class="card">
+    <h1 class="display-1">React Bootstrap 4</h1>
+    <p class="lead"><a href="rb4-app.html">rb4-app</a></p>
+
+    <section class="card border-primary mb-3">
         <div class="card-header">
-            <h3 class="card-title">Bootstrap 4 is working.</h3>
+            <h3 class="card-title"><i class="fab fa-css3 fa-fw"></i> Bootstrap 4</h3>
         </div>
         <div class="card-body">
             <div>
@@ -38,7 +39,7 @@
                 <button type="button" class="btn btn-primary">
                     Primary
                 </button>
-                <button type="button" class="btn btn-danger-outline">
+                <button type="button" class="btn btn-outline-danger">
                     Danger Outline
                 </button>
                 <button type="button" class="btn btn-secondary btn-sm">
@@ -56,9 +57,9 @@
         </div>
     </section>
 
-    <section class="card">
+    <section class="card border-success mb-3">
             <div class="card-header">
-                <h3 class="card-title">Font Awesome 5 is working.</h3>
+                <h3 class="card-title"><i class="fas fa-flag fa-fw"></i> Font Awesome</h3>
             </div>
             <div class="card-body">
                 <div>
@@ -70,9 +71,9 @@
             </div>
     </section>
 
-    <section class="card">
+    <section class="card border-warning mb-3">
             <div class="card-header">
-                <h3 class="card-title">React is working.</h3>
+                <h3 class="card-title"><i class="fab fa-react fa-fw"></i> React</h3>
             </div>
             <div class="card-body">
                 <div id="rb4-test">
@@ -83,6 +84,10 @@
                 <a href="rb4-app.html">Go</a>
             </div>
     </section>
+
+    <footer class="text-right text-muted mb-5 border-top">
+        <p><small><em>React Bootstrap 4 &copy; Davina Leong 2018. <a href="copyright.html">Copyright</a></em></small></p>
+    </footer>
 </div>
 
 <!-- Modal -->
@@ -105,8 +110,6 @@
     </div>
 </div>
 
-<footer class="text-right text-muted">
-    <small>React Bootstrap 4 &copy; Davina Leong 2018. <a href="copyright.html">Copyright</a></small>
-</footer>
+<script src="dist/scripts/vendor.min.js"></script>
 </body>
 </html>
