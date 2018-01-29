@@ -7,17 +7,30 @@ $grays: map-merge((
     "white": $white,
     "black": $black
 ), $grays);
-@debug $grays;
 
 $theme-colors: map-merge((
-    "white": $white,
-    "black": $black,
     "indigo": $indigo,
     "purple": $purple,
     "pink": $pink,
     "orange": $orange,
     "teal": $teal
 ), $theme-colors);
+
+$rb4-rgb-red: #f00;
+$rb4-rgb-yellow: #ff0;
+$rb4-rgb-green: #0f0;
+$rb4-rgb-cyan: #0ff;
+$rb4-rgb-blue: #00f;
+$rb4-rgb-magenta: #f0f;
+$rb4-rgb-colors: (
+    "red": $rb4-rgb-red,
+    "yellow": $rb4-rgb-yellow,
+    "green": $rb4-rgb-green,
+    "cyan": $rb4-rgb-cyan,
+    "blue": $rb4-rgb-blue,
+    "magenta": $rb4-rgb-magenta
+);
+$theme-colors: map-merge($rb4-rgb-colors, $theme-colors);
 
 
 //React Bootstrap 4 variables
