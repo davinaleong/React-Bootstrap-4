@@ -88,18 +88,33 @@ gulp.task('vendor-clear-scripts', () => {
 /*** end:   Vendor ***/
 
 /*** start: Styles ***/
-gulp('sass', () => {
-    gulp.src(PATHS.buildStyles + '**/*.(scss/sass)')
+gulp.task('styles', ['styles-watch']);
+
+gulp.task('styles-watch', ['styles-clear', 'styles-sass'], () => {
+    gulp.watch(PATHS.buildStyles + '**/*.scss', ['styles-sass']);
+});
+
+gulp.task('styles-sass', () => {
+    gulp.src(PATHS.buildStyles + '**/*.scss')
         .pipe(debug({title: 'sass'}))
         .pipe(sass())
         .pipe(gulp.dest(PATHS.distStyles));
         
-    gulp.src(PATHS.buildStyles + '**/*.(scss/sass)')
+    gulp.src(PATHS.buildStyles + '**/*.scss')
         .pipe(debug({title: 'sass'}))
         .pipe(sass())
         .pipe(cleanCss({compatibility: 'ie8'}))
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest(PATHS.distStyles));
+});
+
+gulp.task('styles-clear', () => {
+    del.sync([
+        '!' + PATHS.distStyles + 'vendor.css',
+        '!' + PATHS.distStyles + 'vendor.min.css',
+        PATHS.distStyles + '**/rb4*.css',
+        '!' + PATHS.distStyles
+    ]);
 });
 /*** end:   Styles ***/
 

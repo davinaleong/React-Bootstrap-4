@@ -2,42 +2,71 @@
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins";
 
+$rb4-font-family-sans-serif: $font-family-sans-serif;
+$rb4-font-family-serif: Georgia, "Times New Roman", Times, "Times New Roman", serif;
+$rb4-font-family-monospace: $font-family-monospace;
 $rb4-font-families: (
-    "sans-serif": $font-family-sans-serif,
-    "serif": Georgia, "Times New Roman", Times, "Times New Roman", serif,
-    "monospace": $font-family-monospace,
+    "sans-serif": $rb4-font-family-sans-serif,
+    "serif": $rb4-font-family-serif,
+    "monospace": $rb4-font-family-monospace,
 );
 
+
+$rb4-font-weight-100: 100;
+$rb4-font-weight-200: 200;
+$rb4-font-weight-300: 300;
+$rb4-font-weight-400: 400;
+$rb4-font-weight-500: 500;
+$rb4-font-weight-600: 600;
+$rb4-font-weight-700: 700;
+$rb4-font-weight-normal: normal;
+$rb4-font-weight-bold: bold;
+$rb4-font-weight-bolder: bolder;
+$rb4-font-weight-lighter: lighter;
 $rb4-font-weights: (
-    "100": 100,
-    "200": 200,
-    "300": 300,
-    "400": 400,
-    "500": 500,
-    "600": 600,
-    "700", 700,
-    "normal": normal,
-    "bold": bold,
-    "bolder": bolder,
-    "lighter": lighter
+    "100": $rb4-font-weight-100,
+    "200": $rb4-font-weight-200,
+    "300": $rb4-font-weight-300,
+    "400": $rb4-font-weight-400,
+    "500": $rb4-font-weight-500,
+    "600": $rb4-font-weight-600,
+    "700": $rb4-font-weight-700,
+    "normal": $rb4-font-weight-normal,
+    "bold": $rb4-font-weight-bold,
+    "bolder": $rb4-font-weight-bolder,
+    "lighter": $rb4-font-weight-lighter
 );
 
-$rba-font-styles: (
-    "normal": normal,
-    "italic": italic,
-    "oblique": oblique
+
+$rb4-font-style-normal: normal;
+$rb4-font-style-italic: italic;
+$rb4-font-style-oblique: oblique;
+$rb4-font-styles: (
+    "normal": $rb4-font-style-normal,
+    "italic": $rb4-font-style-italic,
+    "oblique": $rb4-font-style-oblique
 );
 
-$rbs-text-decoration: (
-    "none": none,
-    "underline": underline,
-    "overline": overline,
-    "line-through": line-through
+
+$rb4-text-decoration-none: none;
+$rb4-text-decoration-underline: underline;
+$rb4-text-decoration-overline: overline;
+$rb4-text-decoration-line-through: line-through;
+$rb4-text-decorations: (
+    "none": $rb4-text-decoration-none,
+    "underline": $rb4-text-decoration-underline,
+    "overline": $rb4-text-decoration-overline,
+    "line-through": $rb4-text-decoration-line-through
 );
 
-$rbs-text-transform: (
-    "none": none,
-    "caplitalize": capitalize,
-    "uppercase": uppercase,
-    "lowercase": lowercase
+
+$rb4-text-transform-none: none;
+$rb4-text-transform-capitalize: capitalize;
+$rb4-text-transform-uppercase: uppercase;
+$rb4-text-transform-lowercase: lowercase;
+$rb4-text-transforms: (
+    "none": $rb4-text-transform-none,
+    "caplitalize": $rb4-text-transform-capitalize,
+    "uppercase": $rb4-text-transform-uppercase,
+    "lowercase": $rb4-text-transform-lowercase
 );

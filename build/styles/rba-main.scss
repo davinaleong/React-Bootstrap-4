@@ -1,2 +1,55 @@
 @import "_variables";
 
+@each $font-family, $ff-value in $rb4-font-families {
+    .font-family-#{$font-family} {
+        font-family: #{$ff-value};
+    }
+}
+
+@each $font-weight, $fw-value in $rb4-font-weights {
+    @if type-of($fw-value) == "number" {
+        .text-weight-#{$font-weight} {
+            font-weight: #{$fw-value};
+        }
+    } @else {
+        .text-#{$font-weight} {
+            font-weight: #{$fw-value};
+        }
+    }
+}
+
+@each $font-style, $fs-value in $rb4-font-styles {
+    @if $fs-value == "normal" {
+        .text-style-#{$font-style} {
+            font-style: #{$fs-value};
+        }
+    } @else {
+        .text-#{$font-style} {
+            font-style: #{$fs-value};
+        }
+    }
+}
+
+@each $text-decoration, $td-value in $rb4-text-decorations {
+    @if $td-value == "none" {
+        .text-decoration-#{$text-decoration} {
+            text-decoration: #{$td-value};
+        }
+    } @else {
+        .text-#{$text-decoration} {
+            text-decoration: #{$td-value};
+        }
+    }
+}
+
+@each $text-transform, $tt-value in $rb4-text-transforms {
+    @if $tt-value == "none" {
+        .text-transform-#{$text-transform} {
+            text-decoration: #{$tt-value};
+        }
+    } @else {
+        .text-#{$text-transform} {
+            text-decoration: #{$tt-value};
+        }
+    }
+}
