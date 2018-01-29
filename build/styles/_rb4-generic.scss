@@ -1,4 +1,4 @@
-@import "_variables";
+@import "rb4-variables";
 
 @each $font-family, $ff-value in $rb4-font-families {
     .font-family-#{$font-family} {
@@ -53,3 +53,5 @@
         }
     }
 }
+
+@import "node_modules/bootstrap/scss/bootstrap";

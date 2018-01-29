@@ -2,16 +2,25 @@
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins";
 
-$theme-colors: (
+//Bootstrap variables
+$grays: map-merge((
+    "white": $white,
+    "black": $black
+), $grays);
+@debug $grays;
+
+$theme-colors: map-merge((
+    "white": $white,
     "black": $black,
     "indigo": $indigo,
     "purple": $purple,
     "pink": $pink,
     "orange": $orange,
     "teal": $teal
-);
+), $theme-colors);
 
 
+//React Bootstrap 4 variables
 $rb4-font-family-sans-serif: $font-family-sans-serif;
 $rb4-font-family-serif: Georgia, "Times New Roman", Times, "Times New Roman", serif;
 $rb4-font-family-monospace: $font-family-monospace;
