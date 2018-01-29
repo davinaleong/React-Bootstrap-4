@@ -72,3 +72,12 @@
 
 .text-lowercase {
   text-decoration: lowercase; }
+
+.color-black {
+  color: #000 !important; }
+
+.bg-black {
+  background-color: #000 !important; }
+
+.border-black {
+  border-color: #000 !important; }
