@@ -28,7 +28,8 @@ $rb4-rgb-colors: (
     "green": $rb4-rgb-green,
     "cyan": $rb4-rgb-cyan,
     "blue": $rb4-rgb-blue,
-    "magenta": $rb4-rgb-magenta
+    "magenta": $rb4-rgb-magenta,
+    "black": $black
 );
 $theme-colors: map-merge($rb4-rgb-colors, $theme-colors);
 

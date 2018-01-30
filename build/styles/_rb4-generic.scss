@@ -45,11 +45,11 @@
 @each $text-transform, $tt-value in $rb4-text-transforms {
     @if $tt-value == "none" {
         .text-transform-#{$text-transform} {
-            text-decoration: #{$tt-value};
+            text-transform: #{$tt-value};
         }
     } @else {
         .text-#{$text-transform} {
-            text-decoration: #{$tt-value};
+            text-transform: #{$tt-value};
         }
     }
 }
