@@ -15,6 +15,12 @@
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 
     <title>React Bootstrap 4</title>
+
+    <style>
+        .shade-eee {
+            background: #eee;
+        }
+    </style>
 </head>
 
 <body>
@@ -27,22 +33,26 @@
         <h5 class="card-header">Font Families</h5>
         <div class="card-body">
             <table class="table">
-                <tr>
-                    <th>Font Family</th>
-                    <th>Class</th>
-                </tr>
-                <tr>
-                    <td><span class="font-family-sans-serif">sans-serif</span></td>
-                    <td><code>font-family-sans-serif</code></td>
-                </tr>
-                <tr>
-                    <td><span class="font-family-serif">serif</span></td>
-                    <td><code>font-family-serif</code></td>
-                </tr>
-                <tr>
-                    <td><span class="font-family-monospace">monospace</span></td>
-                    <td><code>font-family-monospace</code></td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Font Family</th>
+                        <th>Class</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="font-family-sans-serif">sans-serif</span></td>
+                        <td><code>font-family-sans-serif</code></td>
+                    </tr>
+                    <tr>
+                        <td><span class="font-family-serif">serif</span></td>
+                        <td><code>font-family-serif</code></td>
+                    </tr>
+                    <tr>
+                        <td><span class="font-family-monospace">monospace</span></td>
+                        <td><code>font-family-monospace</code></td>
+                    </tr>
+                </tbody>
             </table>
         </div>
     </div>
@@ -53,62 +63,70 @@
             <div class="row">
                 <div class="col">
                     <table class="table">
-                        <tr>
-                            <th>Font Weight</th>
-                            <th>Class</th>
-                        </tr>
-                        <tr>
-                            <td><span class="text-weight-100">100</span></td>
-                            <td><code>text-weight-100</code></td>
-                        </tr>
-                        <tr>
-                            <td><span class="text-weight-200">200</span></td>
-                            <td><code>text-weight-200</code></td>
-                        </tr>
-                        <tr>
-                            <td><span class="text-weight-300">300</span></td>
-                            <td><code>text-weight-300</code></td>
-                        </tr>
-                        <tr>
-                            <td><span class="text-weight-400">400</span></td>
-                            <td><code>text-weight-400</code></td>
-                        </tr>
-                        <tr>
-                            <td><span class="text-weight-500">500</span></td>
-                            <td><code>text-weight-500</code></td>
-                        </tr>
-                        <tr>
-                            <td><span class="text-weight-600">600</span></td>
-                            <td><code>text-weight-600</code></td>
-                        </tr>
-                        <tr>
-                            <td><span class="text-weight-700">700</span></td>
-                            <td><code>text-weight-700</code></td>
-                        </tr>
+                        <thead>
+                            <tr>
+                                <th>Font Weight</th>
+                                <th>Class</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="text-weight-100">100</span></td>
+                                <td><code>text-weight-100</code></td>
+                            </tr>
+                            <tr>
+                                <td><span class="text-weight-200">200</span></td>
+                                <td><code>text-weight-200</code></td>
+                            </tr>
+                            <tr>
+                                <td><span class="text-weight-300">300</span></td>
+                                <td><code>text-weight-300</code></td>
+                            </tr>
+                            <tr>
+                                <td><span class="text-weight-400">400</span></td>
+                                <td><code>text-weight-400</code></td>
+                            </tr>
+                            <tr>
+                                <td><span class="text-weight-500">500</span></td>
+                                <td><code>text-weight-500</code></td>
+                            </tr>
+                            <tr>
+                                <td><span class="text-weight-600">600</span></td>
+                                <td><code>text-weight-600</code></td>
+                            </tr>
+                            <tr>
+                                <td><span class="text-weight-700">700</span></td>
+                                <td><code>text-weight-700</code></td>
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
                 <div class="col">
                     <table class="table">
-                        <tr>
-                            <th>Weight</th>
-                            <th>Class</th>
-                        </tr>
-                        <tr>
-                            <td><span class="text-normal">normal</span></td>
-                            <td><code>text-normal</code></td>
-                        </tr>
-                        <tr>
-                            <td><span class="text-bold">bold</span></td>
-                            <td><code>text-bold</code></td>
-                        </tr>
-                        <tr>
-                            <td><span class="text-bolder">bolder</span></td>
-                            <td><code>text-bolder</code></td>
-                        </tr>
-                        <tr>
-                            <td><span class="text-lighter">lighter</span></td>
-                            <td><code>text-lighter</code></td>
-                        </tr>
+                        <thead>
+                            <tr>
+                                <th>Weight</th>
+                                <th>Class</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="text-normal">normal</span></td>
+                                <td><code>text-normal</code></td>
+                            </tr>
+                            <tr>
+                                <td><span class="text-bold">bold</span></td>
+                                <td><code>text-bold</code></td>
+                            </tr>
+                            <tr>
+                                <td><span class="text-bolder">bolder</span></td>
+                                <td><code>text-bolder</code></td>
+                            </tr>
+                            <tr>
+                                <td><span class="text-lighter">lighter</span></td>
+                                <td><code>text-lighter</code></td>
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
             </div>
@@ -119,22 +137,26 @@
         <h5 class="card-header">Font Styles</h5>
         <div class="card-body">
             <table class="table">
-                <tr>
-                    <th>Font Style</th>
-                    <th>Class</th>
-                </tr>
-                <tr>
-                    <td><span class="text-style-normal">normal</span></td>
-                    <td><code>text-style-normal</code></td>
-                </tr>
-                <tr>
-                    <td><span class="text-italic">italic</span></td>
-                    <td><code>text-italic</code></td>
-                </tr>
-                <tr>
-                    <td><span class="text-oblique">oblique</span></td>
-                    <td><code>text-oblique</code></td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Font Style</th>
+                        <th>Class</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td><span class="text-style-normal">normal</span></td>
+                        <td><code>text-style-normal</code></td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-italic">italic</span></td>
+                        <td><code>text-italic</code></td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-oblique">oblique</span></td>
+                        <td><code>text-oblique</code></td>
+                    </tr>
+                </tfoot>
             </table>
         </div>
     </div>
@@ -145,26 +167,30 @@
         <h5 class="card-header">Text Decorations</h5>
         <div class="card-body">
             <table class="table">
-                <tr>
-                    <th>Text Decoration</th>
-                    <th>Class</th>
-                </tr>
-                <tr>
-                    <td><span class="text-decoration-none">none</span></td>
-                    <td><code>text-decoration-none</code></td>
-                </tr>
-                <tr>
-                    <td><span class="text-underline">underline</span></td>
-                    <td><code>text-underline</code></td>
-                </tr>
-                <tr>
-                    <td><span class="text-overline">overline</span></td>
-                    <td><code>text-overline</code></td>
-                </tr>
-                <tr>
-                    <td><span class="text-line-through">line-through</span></td>
-                    <td><code>text-line-through</code></td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Text Decoration</th>
+                        <th>Class</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="text-decoration-none">none</span></td>
+                        <td><code>text-decoration-none</code></td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-underline">underline</span></td>
+                        <td><code>text-underline</code></td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-overline">overline</span></td>
+                        <td><code>text-overline</code></td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-line-through">line-through</span></td>
+                        <td><code>text-line-through</code></td>
+                    </tr>
+                </tbody>
             </table>
         </div>
     </div>
@@ -173,35 +199,306 @@
         <h5 class="card-header">Text Transforms</h5>
         <div class="card-body">
             <table class="table">
-                <tr>
-                    <th>Text Transform</th>
-                    <th>Class</th>
-                </tr>
-                <tr>
-                    <td><span class="text-transform-none">none</span></td>
-                    <td><code>text-transform-none</code></td>
-                </tr>
-                <tr>
-                    <td><span class="text-caplitalize">caplitalize</span></td>
-                    <td><code>text-caplitalize</code></td>
-                </tr>
-                <tr>
-                    <td><span class="text-uppercase">uppercase</span></td>
-                    <td><code>text-uppercase</code></td>
-                </tr>
-                <tr>
-                    <td><span class="text-lowercase">lowercase</span></td>
-                    <td><code>text-lowercase</code></td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Text Transform</th>
+                        <th>Class</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="text-transform-none">none</span></td>
+                        <td><code>text-transform-none</code></td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-caplitalize">caplitalize</span></td>
+                        <td><code>text-caplitalize</code></td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-uppercase">uppercase</span></td>
+                        <td><code>text-uppercase</code></td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-lowercase">lowercase</span></td>
+                        <td><code>text-lowercase</code></td>
+                    </tr>
+                </tbody>
             </table>
         </div>
     </div>
     <br>
 
     <h2>More Colors</h2>
-    
+    <div class="card mb-3">
+        <h5 class="card-header">Text</h5>
+        <div class="card-body">
+            <div class="row">
+                <div class="col">
+                    <h5>Basic</h5>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Class</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="text-black">Black</span></td>
+                                <td><code>text-black</code></td>
+                            </tr>
+                            <tr>
+                                <td><span class="text-white bg-black">White</span></td>
+                                <td><code>text-white</code></td>
+                            </tr>
+                            <tr>
+                                <td><span class="text-red">Red</span></td>
+                                <td><code>text-red</code></td>
+                            </tr>
+                            <tr>
+                                <td><span class="text-yellow bg-black">Yellow</span></td>
+                                <td><code>text-yellow</code></td>
+                            </tr>
+                            <tr>
+                                <td><span class="text-green">Green</span></td>
+                                <td><code>text-green</code></td>
+                            </tr>
+                            <tr>
+                                <td><span class="text-cyan">Cyan</span></td>
+                                <td><code>text-cyan</code></td>
+                            </tr>
+                            <tr>
+                                <td><span class="text-blue">Blue</span></td>
+                                <td><code>text-blue</code></td>
+                            </tr>
+                            <tr>
+                                <td><span class="text-magenta">Magenta</span></td>
+                                <td><code>text-magneta</code></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 
-    <footer class="text-right text-muted mb-5 border-top">
+                <div class="col">
+                    <h5>Extended Bootstrap</h5>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Class</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="text-indigo">Indigo</span></td>
+                                <td><code>text-indigo</code></td>
+                            </tr>
+                            <tr>
+                                <td><span class="text-purple">Purple</span></td>
+                                <td><code>text-purple</code></td>
+                            </tr>
+                            <tr>
+                                <td><span class="text-pink">Pink</span></td>
+                                <td><code>text-pink</code></td>
+                            </tr>
+                            <tr>
+                                <td><span class="text-orange">Orange</span></td>
+                                <td><code>text-orange</code></td>
+                            </tr>
+                            <tr>
+                                <td><span class="text-teal">Teal</span></td>
+                                <td><code>text-teal</code></td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2">
+                                    <small class="text-italic text-muted">Note: Default Bootstrap theme colours retain their theme names; e.g. <code>text-primary</code> for <span class="text-primary">Blue-colored</span> text.</small>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mb-3">
+        <h5 class="card-header">Background</h5>
+        <div class="card-body">
+            <div class="row">
+                <div class="col">
+                    <h5>Basic</h5>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Class</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="bg-black text-white">Black</span></td>
+                                <td><code>bg-black</code></td>
+                            </tr>
+                            <tr>
+                                <td><span class="bg-white bg-black">White</span></td>
+                                <td><code>bg-white</code></td>
+                            </tr>
+                            <tr>
+                                <td><span class="bg-red text-black">Red</span></td>
+                                <td><code>bg-red</code></td>
+                            </tr>
+                            <tr>
+                                <td><span class="bg-yellow text-black">Yellow</span></td>
+                                <td><code>bg-yellow</code></td>
+                            </tr>
+                            <tr>
+                                <td><span class="bg-green text-black">Green</span></td>
+                                <td><code>bg-green</code></td>
+                            </tr>
+                            <tr>
+                                <td><span class="bg-cyan text-black">Cyan</span></td>
+                                <td><code>bg-cyan</code></td>
+                            </tr>
+                            <tr>
+                                <td><span class="bg-blue text-white">Blue</span></td>
+                                <td><code>bg-blue</code></td>
+                            </tr>
+                            <tr>
+                                <td><span class="bg-magenta text-black">Magenta</span></td>
+                                <td><code>bg-magneta</code></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="col">
+                    <h5>Extended Bootstrap</h5>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Class</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="bg-indigo text-white">Indigo</span></td>
+                                <td><code>bg-indigo</code></td>
+                            </tr>
+                            <tr>
+                                <td><span class="bg-purple text-white">Purple</span></td>
+                                <td><code>bg-purple</code></td>
+                            </tr>
+                            <tr>
+                                <td><span class="bg-pink text-black">Pink</span></td>
+                                <td><code>bg-pink</code></td>
+                            </tr>
+                            <tr>
+                                <td><span class="bg-orange text-black">Orange</span></td>
+                                <td><code>bg-orange</code></td>
+                            </tr>
+                            <tr>
+                                <td><span class="bg-teal text-black">Teal</span></td>
+                                <td><code>bg-teal</code></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mb-3">
+        <h5 class="card-header">Border</h5>
+        <div class="card-body">
+            <div class="row">
+                <div class="col">
+                    <h5>Basic</h5>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Class</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="border border-black shade-eee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+                                <td><code>border border-black</code></td>
+                            </tr>
+                            <tr>
+                                <td class="bg-black"><span class="border border-white shade-eee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+                                <td><code>border border-white</code></td>
+                            </tr>
+                            <tr>
+                                <td><span class="border border-red shade-eee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+                                <td><code>border border-red</code></td>
+                            </tr>
+                            <tr>
+                                <td><span class="border border-yellow shade-eee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+                                <td><code>border border-yellow</code></td>
+                            </tr>
+                            <tr>
+                                <td><span class="border border-green shade-eee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+                                <td><code>border border-green</code></td>
+                            </tr>
+                            <tr>
+                                <td><span class="border border-cyan shade-eee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+                                <td><code>border border-cyan</code></td>
+                            </tr>
+                            <tr>
+                                <td><span class="border border-blue shade-eee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+                                <td><code>border border-blue</code></td>
+                            </tr>
+                            <tr>
+                                <td><span class="border border-magenta shade-eee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+                                <td><code>border border-magneta</code></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="col">
+                    <h5>Extended Bootstrap</h5>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Class</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="border border-indigo shade-eee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+                                <td><code>border border-indigo</code></td>
+                            </tr>
+                            <tr>
+                                <td><span class="border border-purple shade-eee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+                                <td><code>border border-purple</code></td>
+                            </tr>
+                            <tr>
+                                <td><span class="border border-pink shade-eee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+                                <td><code>border border-pink</code></td>
+                            </tr>
+                            <tr>
+                                <td><span class="border border-orange shade-eee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+                                <td><code>border border-orange</code></td>
+                            </tr>
+                            <tr>
+                                <td><span class="border border-teal shade-eee">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+                                <td><code>border border-teal</code></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="text-right text-muted mb-5 border border-top">
         <p><small><em>React Bootstrap 4 &copy; Davina Leong 2018. <a href="copyright.html">Copyright</a></em></small></p>
     </footer>
 </div>
